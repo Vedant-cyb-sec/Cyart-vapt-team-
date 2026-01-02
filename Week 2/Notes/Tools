@@ -1,0 +1,9 @@
+# Tool Notes
+
+Nmap – Used to identify open ports and service versions  
+OpenVAS – Performs automated vulnerability assessment  
+Nikto – Web server misconfiguration scanner  
+Metasploit – Exploitation and post-exploitation framework  
+sqlmap – SQL injection automation tool  
+Burp Suite – Web traffic interception and testing  
+sha256sum – Evidence integrity verification  
