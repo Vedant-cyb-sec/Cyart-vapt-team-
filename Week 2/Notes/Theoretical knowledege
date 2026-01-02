@@ -1,0 +1,52 @@
+ 
+1.Vulnerability Scanning
+
+Vulnerability scanning is the process of finding security weaknesses in systems and websites using automated tools.
+
+•	Types of Scans
+Scan	Purpose	Tool
+Network Scan	Finds open ports & services	Nmap
+Web/App Scan	Finds web vulnerabilities	Nikto
+Unauthenticated	External attacker view	–
+Authenticated	Deep internal scan	–
+
+
+•	CVSS Scoring
+
+CVSS measures severity from 0 to 10.
+Score	-	Risk
+0–3.9	 -     Low
+4–6.9	 -     Medium
+7–8.9	 -     High
+9–10    	 -     Critical
+	
+Example: Apache Struts RCE = Critical (CVSS 10)
+
+-	False Positives
+False positives are incorrect scan results and must be manually verified.
+________________________________________
+2. Penetration Testing
+Penetration testing is an authorized security testing process to find real exploitable vulnerabilities.
+-	Pentest Phases (PTES)
+Phase	Meaning
+Recon	Information gathering
+Scanning	Finding vulnerabilities
+Exploitation	Attacking the weakness
+Post-Exploitation	Collecting proof
+Reporting	Writing report
+Pentesting must always be legal and within scope.
+
+________________________________________
+3. Exploit Basics
+
+Vulnerability  	Meaning
+SQL Injection   -	Database attack
+XSS                   - 	Script injection
+Buffer Overflow -	 Memory attack
+	
+-	Mitigations
+
+Protection	 Purpose
+ASLR      -	 Blocks memory attacks
+WAF       -	 Blocks bad requests
+Patching -	 Fixes bugs
