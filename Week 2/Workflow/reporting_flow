@@ -1,0 +1,8 @@
+# Vulnerability Reporting Flow
+
+1. Identify vulnerability
+2. Assign CVSS score
+3. Create proof of concept
+4. Draft remediation steps
+5. Prepare developer escalation
+6. Final report submission
