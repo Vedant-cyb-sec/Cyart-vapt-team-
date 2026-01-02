@@ -1,0 +1,9 @@
+# Reconnaissance Workflow
+
+1. Identify target scope
+2. Discover live hosts
+3. Enumerate open ports and services
+4. Detect technology stack
+5. Document exposed attack surface
+6. Prioritize services for scanning
+
