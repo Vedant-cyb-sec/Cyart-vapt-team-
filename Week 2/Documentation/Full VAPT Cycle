@@ -1,0 +1,63 @@
+# Capstone Project – Full VAPT Cycle
+
+Target: DVWA (Damn Vulnerable Web Application)  
+Host: 192.168.56.110  
+Methodology: PTES (Penetration Testing Execution Standard)
+
+Objective: Perform full vulnerability assessment and penetration testing lifecycle including detection, exploitation, remediation and reporting.
+
+Tools Used:
+- Kali Linux
+- sqlmap
+- OpenVAS
+- Metasploit
+- Google Docs
+
+---
+
+## Detection Phase – OpenVAS Logging
+
+| Timestamp | Target IP | Vulnerability | PTES Phase |
+|---------|---------|--------------|-----------|
+| 2026-01-02 15:10 | 192.168.56.110 | SQL Injection | Exploitation |
+| 2026-01-02 15:15 | 192.168.56.110 | Reflected XSS | Exploitation |
+| 2026-01-02 15:20 | 192.168.56.110 | Weak Session Cookie | Post-Exploitation |
+
+---
+
+## Exploitation Phase – SQL Injection
+
+Tool: sqlmap  
+Target Page: DVWA Login Page  
+
+Result:
+SQL injection vulnerability successfully validated allowing database enumeration and credential extraction.
+
+---
+
+## Remediation Recommendations
+
+- Implement prepared statements for all database queries  
+- Sanitize and validate user input  
+- Enable Web Application Firewall (WAF)  
+- Disable DVWA debug features  
+- Patch PHP and database components  
+- Re-scan after remediation
+
+---
+
+## 200-Word PTES Technical Report
+Google docs : https://docs.google.com/document/d/12lLqvuLcDwTcZ0IgFMgV9i25WCoIwMOziN0_X5Qax1Q/edit?usp=sharing
+---
+
+## 100-Word Non-Technical Summary
+
+Security testing found serious weaknesses in the DVWA web application that could allow unauthorized users to access or manipulate sensitive information. The main issues were related to poor input validation, unsafe database queries and weak session handling. These problems could lead to data leakage, account compromise and service disruption.
+
+It is strongly recommended to improve application coding practices, apply security patches and validate all user input. A security re-test should be performed after fixes to ensure the vulnerabilities are properly resolved.
+
+---
+
+## Conclusion
+
+The Capstone VAPT project demonstrates a complete penetration testing lifecycle including detection, exploitation, remediation and reporting in alignment with PTES methodology.
