@@ -1,1 +1,61 @@
+# OSINT Reconnaissance Report
+
+Target: Metasploitable2  
+IP Address: 192.168.56.102
+
+Objective: Perform OSINT-style reconnaissance, map exposed assets and document findings using structured methodology.
+
+Tools Used:
+- Maltego
+- Shodan
+- Nmap
+- Nikto
+- Wappalyzer
+
+---
+
+## Domain Information
+
+Target IP: 192.168.56.102  
+Host Type: Linux Virtual Machine  
+Purpose: Vulnerable training environment
+
+---
+
+## Exposed Services
+
+| Port | Service | Version |
+|-----|--------|--------|
+| 21 | FTP | vsftpd 2.3.4 |
+| 22 | SSH | OpenSSH 4.7p1 |
+| 80 | HTTP | Apache 2.2.8 |
+| 139 | SMB | Samba 3.0.20 |
+| 445 | SMB | Samba 3.0.20 |
+| 6667 | IRC | UnrealIRCd |
+| 8180 | Tomcat | Apache Tomcat |
+
+---
+
+## Asset Mapping Log
+
+| Timestamp | Tool | Finding |
+|---------|-----|--------|
+| 2026-01-02 13:20 | Nmap | FTP, SMB, IRC, Tomcat services exposed |
+| 2026-01-02 13:32 | Nikto | Outdated Apache & default pages detected |
+| 2026-01-02 13:40 | Wappalyzer | Apache HTTP Server, PHP stack identified |
+
+---
+
+## Recon Checklist
+
+✔ WHOIS Checked  
+✔ Subdomain Enumeration (Not applicable – lab IP)  
+✔ Technology Stack Identified  
+✔ Service Exposure Mapped  
+
+---
+
+## 50-Word Recon Summary
+
+Metasploitable2 exposes multiple outdated and vulnerable services including FTP, SMB, IRC and Apache Tomcat. Enumeration revealed misconfigured services and insecure defaults, making the system highly vulnerable to unauthorized access. The asset mapping confirms the presence of critical attack surfaces suitable for exploitation practice.
 
