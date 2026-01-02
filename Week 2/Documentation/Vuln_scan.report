@@ -1,1 +1,80 @@
+# Vulnerability Scanning Lab – Week 2
+
+Target: Metasploitable2  
+Host: 192.168.56.102
+
+Objective: Perform vulnerability scanning using Nmap, OpenVAS and Nikto.  
+Prioritize findings using CVSS and prepare escalation-ready documentation.
+
+Tools Used:
+- Nmap
+- OpenVAS
+- Nikto
+- Google Sheets (CVSS scoring)
+- Google Docs (Reporting)
+
+---
+
+## Scan Execution
+
+Nmap Scan:
+nmap -sV 192.168.56.102
+
+OpenVAS Scan:
+Full vulnerability scan performed on target host.
+
+Nikto Scan:
+nikto -h http://192.168.56.102
+
+---
+
+## Prioritized Vulnerability Table (Slack Friendly)
+
+| Scan ID | Vulnerability               | CVSS | Priority | Host |
+|--------|-----------------------------|------|----------|---------------|
+| 001 | vsftpd Backdoor RCE | 10.0 | Critical | 192.168.56.102 |
+| 002 | Samba Remote Code Execution | 9.8 | Critical | 192.168.56.102 |
+| 003 | Apache 2.2.8 Multiple CVEs | 8.1 | High | 192.168.56.102 |
+| 004 | MySQL Authentication Bypass | 7.5 | High | 192.168.56.102 |
+| 005 | Telnet Plaintext Login | 6.8 | Medium | 192.168.56.102 |
+| 006 | NFS Misconfiguration | 6.5 | Medium | 192.168.56.102 |
+
+---
+
+## High Risk Findings
+
+| CVE / Reference | Finding | Impact |
+|---------------|--------|-------|
+| CVE-2011-2523 | vsftpd Backdoor | Remote command execution |
+| CVE-2007-2447 | Samba RCE | Full system compromise |
+| Multiple | Apache 2.2.8 | Web exploitation |
+| Multiple | MySQL 5.0 | Unauthorized DB access |
+
+---
+
+## Remediation Summary
+
+- Upgrade FTP, Apache, Samba and MySQL to latest supported versions  
+- Disable Telnet and use SSH only  
+- Restrict NFS exports with proper authentication  
+- Close unused ports and services
+
+---
+
+## Escalation & Reporting
+
+CVSS Score Sheet:  
+Google Sheets maintained for vulnerability scoring: https://docs.google.com/spreadsheets/d/18xg1ZxeQ5gzAv1LMugx6SzOYr4LkR-KV5fAlMEGkb1c/edit?usp=sharing 
+
+Developer Escalation:  
+100-word escalation email drafted with proof of concept: https://docs.google.com/document/d/1QiKNaGiKKSo9q9SDF8zCeUk6mp1QSqGgBlHRn6PyMr8/edit?usp=sharing
+
+Proof of Concept:
+Privilege escalation PoC documented and validated : https://docs.google.com/document/d/1cqJg6Z1YmdTk4ko22dSp8MBSHlOZ4bohcLjdmp8V9Vk/edit?usp=sharing
+
+---
+
+## Conclusion
+
+The vulnerability scan revealed multiple critical and high-risk vulnerabilities that allow remote command execution, privilege escalation and full system compromise. The environment is critically insecure and would require immediate remediation in a real production scenario.
 
