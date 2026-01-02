@@ -1,0 +1,22 @@
+# Pentesting Command Reference
+
+## Network Discovery
+netdiscover -r 192.168.56.0/24   # Discover live hosts
+
+## Port Scanning
+nmap -sV 192.168.56.102          # Version detection
+nmap -A 192.168.56.102           # Aggressive scan
+
+## Web Scanning
+nikto -h http://192.168.56.102   # Web vulnerability scan
+
+## Exploitation
+msfconsole                      # Launch Metasploit
+search vsftpd                   # Find exploit
+use exploit/unix/ftp/vsftpd_234_backdoor
+
+## SQL Injection
+sqlmap -u "http://target/vuln.php?id=1" --dbs
+
+## Hashing
+sha256sum /etc/passwd           # Evidence hashing
