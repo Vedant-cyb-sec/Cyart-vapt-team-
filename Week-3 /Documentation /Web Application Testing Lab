@@ -1,0 +1,11 @@
+Web Application Testing Lab – DVWA
+
+Tools: Burp Suite, sqlmap, OWASP ZAP
+
+Findings:
+- Critical SQL Injection
+- Reflected XSS
+
+📄 Full Pentest Report:
+https://docs.google.com/document/d/1DGl-blhvZFkKHiOQ4IJzwy8rvR1abKxAh6Wvlf4U3_w/edit?usp=sharing
+
