@@ -1,1 +1,11 @@
+1. DVWA was installed on the Metasploitable2 virtual machine.
+2. DVWA security level was set to LOW.
+3. The target IP address was identified using `ip a`.
+4. The DVWA web application was accessed from Kali Linux.
+5. Manual SQL Injection testing was performed.
+6. Automated SQL Injection testing was done using sqlmap.
+7. Reflected XSS vulnerability was tested using payloads.
+8. Burp Suite was configured with Firefox to intercept requests.
+9. Authentication mechanisms were verified.
+10. All findings were documented with screenshots.
 
