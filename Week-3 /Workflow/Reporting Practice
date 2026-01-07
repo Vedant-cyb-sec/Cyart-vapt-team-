@@ -1,1 +1,58 @@
+Reporting Practice Workflow
+##Step 1 – Evidence Collection
 
+Screenshots of successful exploitation were captured.
+
+Proof of vulnerabilities was organized vulnerability-wise.
+
+##Step 2 – Report Structuring
+
+A VAPT report template was created in Google Docs.
+
+Major sections were defined:
+
+Executive Summary
+
+Technical Findings
+
+Remediation Plan
+
+Findings Table
+
+##Step 3 – Findings Documentation
+
+Each vulnerability was documented with:
+
+Description
+
+Impact
+
+CVSS score
+
+Proof screenshots
+
+Recommended remediation
+
+##Step 4 – Findings Logging
+
+All identified vulnerabilities were logged into a centralized findings table.
+
+Severity levels were assigned based on CVSS scores.
+
+##Step 5 – Visualization
+
+Network attack path diagrams were created using Draw.io.
+
+Attack flows were mapped visually for better understanding.
+
+##Step 6 – Management Brief Preparation
+
+A non-technical summary was drafted for management stakeholders.
+
+Technical details were simplified into business-impact language.
+
+##Step 7 – Final Review & Export
+
+The complete report was reviewed for clarity and accuracy.
+
+Final documentation was exported to PDF for submission.
