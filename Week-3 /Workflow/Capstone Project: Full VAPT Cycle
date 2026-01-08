@@ -1,1 +1,17 @@
+#Workflow 
 
+1.An authorized VulnHub vulnerable virtual machine was selected for assessment.
+
+2.Initial reconnaissance was conducted to identify active services.
+
+3.OpenVAS was used to detect vulnerabilities.
+
+4.A controlled exploitation simulation was performed to validate findings.
+
+5.Evidence was recorded and logged.
+
+6.Remediation actions were suggested.
+
+7.The target was rescanned to verify fixes.
+
+8.Final report was prepared in Google Docs.
