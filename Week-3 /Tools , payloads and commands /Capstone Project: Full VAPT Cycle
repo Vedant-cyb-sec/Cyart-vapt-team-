@@ -1,1 +1,17 @@
+#Capstone Project: Full VAPT Cycle
 
+##Tools Used
+Tool	          Purpose
+Kali Linux :	Used as the authorized penetration testing environment
+Metasploit Framework :	Used for controlled exploitation simulation in the lab
+OpenVAS	: Used to scan and identify vulnerabilities
+Google Docs	 : Used for professional report documentation and sharing
+
+##Commands 
+Action	                    Purpose
+Network reconnaissance :	Identify target system
+Vulnerability scanning	: Detect known vulnerabilities
+Exploitation simulation	: Validate discovered weaknesses
+Evidence logging	: Record findings and timestamps
+Remediation verification :	Confirm fixes through rescanning
+Report documentation	: Prepare professional PTES report
