@@ -1,1 +1,28 @@
+##API Security Testing Workflow
+1. API Endpoint Enumeration
 
+API endpoints were enumerated using Postman and Burp Suite by observing application traffic and documenting available routes, parameters, and authentication requirements.
+
+2. Authorization Validation (BOLA Testing)
+
+Object-level authorization controls were tested by observing API behavior when requesting both authorized and unauthorized objects. Responses were compared against expected secure behavior to identify Broken Object Level Authorization weaknesses.
+
+3. Token Handling & Session Validation
+
+Authorization tokens were intercepted and modified using Burp Suite Repeater to evaluate improper access control, token reuse, and privilege boundary enforcement.
+
+4. GraphQL Injection & Input Validation Testing
+
+GraphQL endpoints were tested using crafted queries in Postman to analyze backend query handling, field exposure, and input validation controls.
+
+5. Injection Confirmation
+
+sqlmap was used to confirm suspected injection points and validate manual findings under controlled lab conditions.
+
+6. Rate Limiting & Abuse Checks
+
+Repeated API requests were generated to observe rate-limiting enforcement and potential abuse risks.
+
+7. Documentation & Reporting
+
+All findings were documented with expected vs observed behavior, impact analysis, and remediation guidance following OWASP API Top-10 standards.
