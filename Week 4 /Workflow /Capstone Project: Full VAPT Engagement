@@ -1,1 +1,36 @@
+# **Workflow: Capstone VAPT Engagement**
+
+## **Phase 1: Pre-Engagement**
+
+Scope definition → Rules of engagement → Legal authorization → Testing schedule
+
+
+## **Phase 2: Reconnaissance**
+
+Nmap scan → Service discovery → Banner grabbing → OpenVAS baseline scan
+
+
+## **Phase 3: Vulnerability Analysis**
+
+Metasploit search exploits → Burp Suite web scan → Manual verification → CVSS scoring
+
+
+## **Phase 4: Exploitation**
+
+VSFTPD exploit → Gain initial access → Privilege escalation → Lateral movement
+
+
+## **Phase 5: Post-Exploitation**
+
+Establish persistence → Data harvesting → Cleanup traces → Document access paths
+
+
+## **Phase 6: Remediation**
+
+Patch VSFTPD → Input validation → Least privilege → Rescan with OpenVAS
+
+
+## **Phase 7: Reporting**
+
+Executive summary → Attack timeline → Remediation plan → Stakeholder briefing → Evidence archive
 
