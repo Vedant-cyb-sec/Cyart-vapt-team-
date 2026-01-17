@@ -1,1 +1,14 @@
 
+##Workflow: Mobile App Testing
+
+Setup → Static Scan → Dynamic Test → IPC Check → Report
+
+Setup → Launch emulator → Install APK → Start tools
+
+Static → MobSF upload → Full scan → Log findings
+
+Dynamic → Frida hooks → Auth bypass → Function tracing
+
+IPC → Drozer connect → Component test → Permission check
+
+Report → Google Docs → 50-word summary → Archive evidence
