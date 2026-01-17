@@ -1,1 +1,14 @@
+##Workflow: Privilege Escalation & Persistence
+
+Initial Access → Enumeration → Escalation → Persistence → Report
+
+Initial Access → Gain foothold → Meterpreter session → Basic recon
+
+Enumeration → LinPEAS scan → Check SUID/cron → Kernel version
+
+Escalation → Exploit SUID → Try kernel exploits → Gain root
+
+Persistence → Cron jobs → SSH keys → Service creation
+
+Report → Google Docs → Log techniques → 50-word summary
 
