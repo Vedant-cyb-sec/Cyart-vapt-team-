@@ -1,1 +1,15 @@
+##Workflow: Network Protocol Attacks
 
+Setup → Recon → ARP Spoof → SMB Relay → Analysis → Report
+
+Setup → Start VM → Configure tools → Set IP forwarding
+
+Recon → Nmap scan → Identify targets → Find SMB services
+
+ARP Spoof → Ettercap launch → Target selection → MITM established
+
+SMB Relay → Responder start → LLMNR poison → Capture NTLM hashes
+
+Analysis → Wireshark capture → Filter traffic → Extract credentials
+
+Report → Google Docs → Log attacks → 50-word summary
