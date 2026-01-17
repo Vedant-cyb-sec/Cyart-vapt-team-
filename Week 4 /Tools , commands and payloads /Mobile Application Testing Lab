@@ -1,1 +1,27 @@
+# **Mobile Application Testing Lab - Tools & Commands**
+
+## **Tools Used**
+
+| Tool                  |  Purpose                           | Platform |
+|-----------------------|------------------------------------|---------|
+| **MobSF**             | Static & dynamic APK analysis      | Web-based |
+| **Frida**             |  Runtime instrumentation & hooking | CLI/Python |
+| **Drozer**            | Android security assessment        | CLI |
+| **Android Emulator**  | Test environment                   | Virtual Device |
+| **ADB**               | Device communication               | CLI |
+
+## **Commands Used**
+
+| Tool        | Command                                    | Purpose |
+|-------------|--------------------------------------------|---------|
+| **MobSF**   | `python3 manage.py runserver 0.0.0.0:8000` | Start MobSF server |
+| **MobSF**   | Access `http://localhost:8000`             | Web interface |
+| **Frida**   | `frida-ps -U`                              | List running processes |
+| **Frida**   | `frida -U -f com.example.app -l script.js` | Hook app with script |
+| **Drozer**  | `adb forward tcp:31415 tcp:31415`          | Port forwarding |
+| **Drozer**  | `drozer console connect`                   | Start Drozer session |
+| **Drozer**  | `run app.package.list `                    | List packages |
+| **ADB**     | `adb install test.apk`                     | Install APK |
+| **ADB**     | `adb shell`                                | Device shell access |
+| **ADB**     | `adb logcat`                               | View logs |
 
