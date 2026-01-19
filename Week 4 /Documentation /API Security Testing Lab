@@ -1,1 +1,16 @@
- summary of api test : https://docs.google.com/document/d/1L2nem-WndUPg_epRsL03bZZb8udiBzHZlJpRwo-uqpI/edit?usp=sharing
+##API Security Testing Lab
+
+Tools: Burp Suite, Postman, sqlmap
+Activities: Tested DVWA API for OWASP API Top 10 vulnerabilities, exploited weaknesses, documented findings.
+
+Vulnerability Log:
+
+Test ID   Vulnerability	      Severity	       Endpoint
+008	      BOLA	               Critical       	/api/users
+009       	GraphQL Injection 	High	           /graphql
+
+Manual Testing: Manipulated API tokens in Burp Suite to access unauthorized data.
+
+Checklist:https://docs.google.com/document/d/1dr7-qHgC0y6g8_ntEaVSi7DJM8OiPl7WhcQHdzVjml4/edit?usp=sharing
+Screenshots : https://docs.google.com/document/d/1hUr-BWjG1Gt-k00WCcXRTmpHmjYVppZo3w-DZNJbCWY/edit?usp=sharing
+summary of api test : https://docs.google.com/document/d/1L2nem-WndUPg_epRsL03bZZb8udiBzHZlJpRwo-uqpI/edit?usp=sharing
