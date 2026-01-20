@@ -1,1 +1,32 @@
+Privilege Escalation and Persistence Lab
+
+Objective: Demonstrate the ability to escalate privileges and establish persistence on a vulnerable system.
+
+Tools:
+
+Metasploit (Meterpreter, Exploit modules)
+LinPEAS (Linux Privilege Escalation Awesome Script)
+PowerSploit (PowerShell-based offensive tools)
+Tasks:
+
+1.Privilege Escalation
+Use LinPEAS to enumerate SUID vulnerabilities on a VulnHub VM.
+Exploit identified vulnerabilities to escalate privileges and obtain a root shell.
+Document each step thoroughly, including tool usage, command output, and results.
+Task ID	Technique	Target IP	Status	Outcome
+010	SUID Exploit	192.168.1.150	Success	Root Shell
+
+2.Persistence
+Choose one of the following persistence methods to set up on the vulnerable system: a. Cron Job: Create a cron job to ensure the attacker's foothold endures after reboots. Use a cleverly named script to avoid detection. b. System Service: Modify a system service to include the attacker's payload, ensuring it runs at system startup.
+Document the chosen persistence method, including step-by-step instructions and any considerations for evading detection.
+
+Enhanced Tasks:
+
+User-Defined SUID: Write a simple C program that sets the SUID bit and provides a basic shell. Compile and run the program on the vulnerable VM, then use LinPEAS to identify it as an enumeration target.
+Sudo Bypasses: Explore ways to bypass the sudo password requirement using known exploits, local vulnerabilities, or environment variables. Document successful techniques.
+Log Cleanup: Implement techniques to remove evidence of persistence methods from log files, such as /var/log/syslog or /var/log/apt.
+
+Deliverables:
+Checklist : https://docs.google.com/document/d/1Zv8LGc7EBnp_LpHW_ZuhIACMCATxW4BM7q-uxs5-mHs/edit?usp=sharing
+Evidence (screenshots) : https://docs.google.com/document/d/1ZzeZuSRc7hRA2EEt5U5uLl0lXBF4dbc5-RGhSZ2VB_k/edit?usp=sharing
 
