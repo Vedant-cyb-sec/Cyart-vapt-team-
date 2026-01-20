@@ -1,1 +1,42 @@
+##Network Protocol Attacks Lab
 
+Overview
+
+This lab focuses on understanding and exploiting weaknesses in common network protocols through Man‑in‑the‑Middle (MitM) techniques. The objective is to simulate real‑world internal network attacks, capture authentication material, and analyze intercepted traffic using standard offensive security tools.
+
+Tools Used
+
+Responder – LLMNR/NBT‑NS poisoning and NTLM hash capture
+
+Ettercap – ARP spoofing and MitM attack execution
+
+Wireshark – Network traffic capture and analysis
+
+Tasks Performed
+1. SMB Relay / NTLM Capture
+
+Responder was configured to listen for LLMNR and NBT‑NS requests on the network. An SMB authentication attempt was triggered from the target system, resulting in successful interception of NTLM credentials.
+
+Attack Log:
+
+Attack ID	Technique	Target IP	Status	Outcome
+015	SMB Relay	192.168.1.200	Success	NTLM Hash
+2. Man‑in‑the‑Middle Attack (ARP Spoofing)
+
+Ettercap was used to perform ARP spoofing between the victim and the gateway, allowing interception of network traffic. Captured packets were analyzed to observe plaintext data, authentication attempts, and protocol behavior.
+
+
+
+Key Findings
+
+LLMNR/NBT‑NS poisoning can lead to credential leakage in misconfigured networks
+
+SMB authentication attempts expose NTLM hashes when intercepted
+
+ARP spoofing enables full traffic interception on unsecured LANs
+
+
+Deliverables
+Checklist : https://docs.google.com/document/d/1cuNjYfqWyNMCo4kfJKib0G94vULdRCm_o_VzZ-N-wlc/edit?usp=sharing
+Evidence : https://docs.google.com/document/d/11R4iLiu02uKnlP9Z4KUlpZSx5PFCx462dcZG7yk1eT0/edit?usp=sharing
+MITM summary : https://docs.google.com/document/d/1KDtUHs6XZ32MQvjuvIDJAmNn376QWAdEZaha7FOeS7A/edit?usp=sharing
