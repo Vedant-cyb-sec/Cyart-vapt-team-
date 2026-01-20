@@ -1,2 +1,58 @@
+## Capstone Project: Full VAPT Engagement
+
+#Objective
+
+To simulate a full Vulnerability Assessment and Penetration Testing (VAPT) engagement following the PTES methodology, from reconnaissance to reporting and remediation.
+
+Tools  Used
+Kali Linux           – Attacker machine
+Metasploit Framework – Exploitation
+OpenVAS              – Vulnerability scanning & rescanning
+Burp Suite           – API testing
+Google Docs          – Reporting
+
+#Engagement Scope
+
+Target: HackTheBox – Lame VM
+
+IP Address: 192.168.1.200
+
+Testing Type: Black‑box internal penetration test
+
+Attack Log (PTES Mapping)
+Timestamp	Target IP	Vulnerability	PTES Phase
+2025-08-30 14:30:00	192.168.1.200	Open FTP Service	Reconnaissance
+2025-08-30 14:45:00	192.168.1.200	VSFTPD 2.3.4 Detected	Enumeration
+2025-08-30 15:00:00	192.168.1.200	VSFTPD RCE	Exploitation
+2025-08-30 15:10:00	192.168.1.200	Root Shell Access	Post‑Exploitation
+Exploitation Summary
+
+The target was running VSFTPD version 2.3.4, which contains a known backdoor vulnerability. Using Metasploit module:
+
+exploit/unix/ftp/vsftpd_234_backdoor
+
+
+successful remote code execution was achieved, resulting in unauthenticated root access. This confirmed a critical security failure due to outdated services and lack of hardening.
+
+#Remediation & Mitigation
+
+1.Upgrade or remove VSFTPD 2.3.4
+
+2.Disable anonymous FTP access
+
+3.Enforce least privilege on services
+
+4.Apply OS and service patches regularly
+
+5.Implement firewall rules and network segmentation
+
+6.Validate API inputs tested via Burp Suite
+
+7.Conduct periodic vulnerability scans
+
+8.A post‑remediation OpenVAS scan confirmed no remaining critical vulnerabilities.
+
+Flowchart of whole project: https://docs.google.com/document/d/1PEynIeQlgn7brHR_UaLGrDkzCI1z_o2iJ3i4lR725Bg/edit?usp=sharing
+Evidence :
 PTES Report (google docs ) - https://docs.google.com/document/d/1rVy0bLSdCZ3WNWW88UDC31Gp_hAE8y-yC36c0tonqPw/edit?usp=sharing
 Non technical summary (google docs ) : https://docs.google.com/document/d/1thXUsP-YDzWSfSYx7Enu6DQxkFizUUKDNa-sJifsRDA/edit?usp=sharing
