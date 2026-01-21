@@ -19,7 +19,7 @@ Test ID 	Vulnerability	    Severity	Target App
 Observation:
 Sensitive data was stored in plaintext within the app’s local storage, making it accessible to attackers on rooted devices or through backup extraction.
 
-4️⃣ IPC Testing (Drozer)
+IPC Testing (Drozer)
 
 Tool Used: Drozer
 Purpose: Identify exposed Android components.
