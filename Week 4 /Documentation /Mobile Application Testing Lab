@@ -7,7 +7,7 @@ To analyze an Android application for security vulnerabilities using static and 
 # Static Analysis (MobSF)
 
 Tool Used: Mobile Security Framework (MobSF)
-Target: test.apk
+Target: Insecure.api.bank.apk
 
 Description:
 The APK was uploaded to MobSF to identify insecure configurations, exposed data, and storage issues. MobSF automatically analyzed the manifest, source code, permissions, and local storage usage.
