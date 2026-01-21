@@ -1,1 +1,33 @@
+## Mobile Application Testing Lab – Documentation Content
+
+# Objective
+
+To analyze an Android application for security vulnerabilities using static and dynamic analysis tools, and document the findings following a structured mobile pentesting workflow.
+
+# Static Analysis (MobSF)
+
+Tool Used: Mobile Security Framework (MobSF)
+Target: test.apk
+
+Description:
+The APK was uploaded to MobSF to identify insecure configurations, exposed data, and storage issues. MobSF automatically analyzed the manifest, source code, permissions, and local storage usage.
+
+Finding Log
+Test ID 	Vulnerability	    Severity	Target App
+016     	Insecure Storage	High	    test.apk
+
+Observation:
+Sensitive data was stored in plaintext within the app’s local storage, making it accessible to attackers on rooted devices or through backup extraction.
+
+4️⃣ IPC Testing (Drozer)
+
+Tool Used: Drozer
+Purpose: Identify exposed Android components.
+
+Description:
+Drozer was used to enumerate exported activities, services, and content providers. Improperly exposed IPC components were tested to check if unauthorized access or data leakage was possible without required permissions.
+
+Dynamic Testing 50 words summary : https://docs.google.com/document/d/1lWb0p6SxwryS2rW_ldmWqZG0hFQF0sMQgb4RN7RBM34/edit?usp=sharing
+Checklist: https://docs.google.com/document/d/13itVPZK-wMIdTvkgpQdtogYllsaUqgXCzSfooLkVRqk/edit?usp=sharing
+Evidence: 
 
